@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GuizeViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="7wb-nk-jL3">
+                    <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DZJ-Q0-mjQ">
+                    <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="Sww-Rx-HrB">
+                            <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H98-lh-5t5">
+                            <rect key="frame" x="74" y="81" width="676" height="257"/>
+                            <string key="text">THIS GAME IS A CASUAL CARD GAME. THE CARD LIBRARY HAS A TOTAL OF 52 CARDS OF DIFFERENT COLORS. AT THE BEGINNING, THE CARDS WILL BE RANDOMLY DIVIDED EQUALLY BETWEEN THE PLAYERS AND THE AI. BOTH THE PLAYERS AND THE AI ​​WILL GET 26 CARDS TO FORM THEIR OWN CARD LIBRARY.
+AT THE BEGINNING OF THE GAME, PLAYERS CAN GET 3 CARDS IN THEIR HAND FROM THEIR OWN DECK.
+PLAYERS AND AI ALTERNATE TURNS. AT THE BEGINNING OF THE ROUND, PLAYERS MUST PLACE CARDS IN THEIR HANDS ON THE FIELD. IF THE NUMBER OF CARDS PLACED ON THE FIELD AT THIS TIME IS THE SAME AS THE NUMBER OF EXISTING CARDS ON THE FIELD, THE CHARACTER WHO PLACED THE CARD WILL RECEIVE TWO ALL CARDS BETWEEN NUMBERS. AND PLACE THEM IN THE SHUFFLE AREA.
+WHEN THE OWN CARD LIBRARY IS 0, THE CARDS IN THE SHUFFLE AREA WILL BE SHUFFLED AND PLACED IN THE OWN CARD LIBRARY. PLAYERS CAN CLICK "RESET CARD" TO SHUFFLE THE CARDS.
+WHEN THE NUMBER OF CARDS IN ONE PARTY'S DECK AND SHUFFLE AREA IS BOTH 0, THE OTHER PARTY WINS AND THE GAME ENDS.</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IzW-ul-be7">
+                            <rect key="frame" x="754" y="38" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="nYN-96-HLq"/>
+                                <constraint firstAttribute="height" constant="60" id="vtH-Qv-njs"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" backgroundImage="7"/>
+                            <connections>
+                                <action selector="backclick:" destination="-1" eventType="touchUpInside" id="vns-q6-Zef"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Sww-Rx-HrB" secondAttribute="bottom" id="1Eg-yC-vbP"/>
+                        <constraint firstItem="Sww-Rx-HrB" firstAttribute="top" secondItem="DZJ-Q0-mjQ" secondAttribute="top" id="Fjw-tp-BpN"/>
+                        <constraint firstAttribute="trailing" secondItem="Sww-Rx-HrB" secondAttribute="trailing" id="PCb-eI-D4e"/>
+                        <constraint firstItem="H98-lh-5t5" firstAttribute="leading" secondItem="DZJ-Q0-mjQ" secondAttribute="leading" constant="74" id="Rtp-Gd-8lc"/>
+                        <constraint firstAttribute="bottom" secondItem="H98-lh-5t5" secondAttribute="bottom" constant="55" id="XDP-H6-2BV"/>
+                        <constraint firstAttribute="trailing" secondItem="H98-lh-5t5" secondAttribute="trailing" constant="102" id="cJK-1d-DZf"/>
+                        <constraint firstItem="Sww-Rx-HrB" firstAttribute="leading" secondItem="DZJ-Q0-mjQ" secondAttribute="leading" id="qmH-wl-703"/>
+                        <constraint firstAttribute="trailing" secondItem="IzW-ul-be7" secondAttribute="trailing" constant="38" id="u6h-L8-TZ9"/>
+                        <constraint firstItem="H98-lh-5t5" firstAttribute="top" secondItem="DZJ-Q0-mjQ" secondAttribute="top" constant="81" id="utl-wO-PZn"/>
+                        <constraint firstItem="IzW-ul-be7" firstAttribute="top" secondItem="DZJ-Q0-mjQ" secondAttribute="top" constant="38" id="uvR-bl-2tr"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="DZJ-Q0-mjQ" secondAttribute="trailing" id="064-n4-Pss"/>
+                <constraint firstItem="7wb-nk-jL3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0H1-nh-VjC"/>
+                <constraint firstItem="DZJ-Q0-mjQ" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="1bG-lE-sUc"/>
+                <constraint firstAttribute="bottom" secondItem="DZJ-Q0-mjQ" secondAttribute="bottom" id="BvO-Wl-fVZ"/>
+                <constraint firstAttribute="trailing" secondItem="7wb-nk-jL3" secondAttribute="trailing" id="LK2-gD-gCY"/>
+                <constraint firstItem="7wb-nk-jL3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ffr-sT-HjC"/>
+                <constraint firstAttribute="bottom" secondItem="7wb-nk-jL3" secondAttribute="bottom" id="j0d-bJ-bOS"/>
+                <constraint firstItem="DZJ-Q0-mjQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nya-k4-b80"/>
+            </constraints>
+            <point key="canvasLocation" x="101.40845070422536" y="19.083969465648853"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="5" width="2795" height="1290"/>
+        <image name="6" width="2293" height="1288"/>
+        <image name="7" width="178" height="178"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

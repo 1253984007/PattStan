@@ -1,0 +1,6 @@
+framework module Pods_PattStan_mobile {
+  umbrella header "Pods-PattStan-mobile-umbrella.h"
+
+  export *
+  module * { export * }
+}
